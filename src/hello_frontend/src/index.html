@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://icp0.io https://*.icp0.io https://lite.invoicemate.net"> -->
     <title>hello</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="../assets/main.css" /> -->
   </head>
   <body>
     <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
       <br />
       <br />
       <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
+        <h1>Invoice Mate</h1>
+        <label for="name">Enter your mongo ID to query: &nbsp;</label>
         <input id="name" alt="Name" type="text" />
         <button type="submit">Click Me!</button>
       </form>
-      <section id="greeting"></section>
+      <br>
+      <div>
+        <button type="button" id="mybtn">Click here to fetch data from HLF</button>
+
+      </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
